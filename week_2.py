@@ -35,17 +35,17 @@ print("The sum of both areas is: " + str(sum))
 # The sum of both areas is: 20.5
 
 
-#def convert_seconds(second):
-#	hours = seconds // 3600
-#	minutes = (seconds - hours * 3600) // 60
-#	remaining_seconds = seconds - hours * 3600 - minutes * 60
-#	return hours, minutes, remaining_seconds
+def convert_seconds(seconds):
+    hours = seconds // 3600
+    minutes = (seconds - hours * 3600) // 60
+    remaining_seconds = seconds - hours * 3600 - minutes * 60
+    return hours, minutes, seconds, remaining_seconds
 
-#hours, minutes, seconds = convert_seconds(5000)
-#print(hours, minutes, seconds)
+hours, minutes, seconds, remaining_seconds = convert_seconds(5000)
+print(hours, minutes, remaining_seconds)
 
 # Output:
-# 1 23 30
+# 1 23 20
 
 
 def greeting(name):
@@ -68,6 +68,10 @@ def lucky_number(name):
 lucky_number("Kay")
 lucky_number("Cameron")
 
+# Output:
+# Hello Kay. Your lucky number is 27
+# Hello Cameron. Your lucky number is 63
+
 # 1) Complete the function to return the result of the conversion
 def convert_distance(miles):
 	km = miles * 1.6  # approximately 1.6 km in 1 mile
@@ -85,6 +89,10 @@ print("The distance in kilometers is " + str(my_trip_km))
 #    and fill in the blank to print the result
 print("The round-trip in kilometers is " + str(2.0*my_trip_km))
 
+# Output:
+# The distance in kilometers is 88.0
+# The round-trip in kilometers is 176.0
+
 
 # This function compares two numbers and returns them
 # in increasing order.
@@ -99,6 +107,9 @@ def order_numbers(number1, number2):
 smaller, bigger = order_numbers(100, 99)
 print(smaller, bigger)
 
+# Output:
+# 99 100
+
 # What are the values passed into functions as input called? = parameters
 
 def lucky_number(name):
@@ -109,4 +120,32 @@ def lucky_number(name):
 print(lucky_number("Kay"))
 print(lucky_number("Cameron"))
 
+# Output:
+# Hello Kay. Your lucky number is 27
+# Hello Cameron. Your lucky number is 63
+
 ###############################################################################
+
+# SUBCHAPTER CONDITIONALS
+
+# boolean = one of two possible states: true or false
+
+
+#interesting because the output is true
+print("Yellow" > "Cyan")
+
+# Output:
+# True
+
+# not operator can make boolean yang menghasilkan false jadi true, atau sebalinya
+
+print(not 42 == "Answer")
+
+# Output:
+# True
+
+# To check if two values are the same, we can use the equality operator: == 
+# To check if two values are not the same, we can use the not equals operator: != 
+
+# he ability of a program to alter its execution sequence is called branching
+
