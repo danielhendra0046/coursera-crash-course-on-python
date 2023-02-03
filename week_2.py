@@ -149,3 +149,33 @@ print(not 42 == "Answer")
 
 # he ability of a program to alter its execution sequence is called branching
 
+# today i learn about if else, ez
+
+def hint_username(username):
+	if len(username) < 3:
+		print("Invalid username. Must be at least 3 characters long")
+	else:
+		if len(username) > 15:
+			print("Invalid username. Must be at most 15 characters long")
+		else:
+			print("Valid username")
+
+hint_username("ak")
+
+# Output:
+# Invalid username. Must be at least 3 characters long
+
+# you can use elif too, so that code isn't too long
+
+def hint_username(username):
+	if len(username) < 3:
+		print("Invalid username. Must be at least 3 characters long")
+	elif len(username) > 15:
+		print("Invalid username. Must be at most 15 characters long")
+	else:
+		print("Valid username")
+
+hint_username("aku")
+
+# Output:
+# Valid username
