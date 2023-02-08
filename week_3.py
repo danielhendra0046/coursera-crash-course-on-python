@@ -21,3 +21,6 @@ print("x=" + str(x))
 # Not there yet, x=4
 # x=5
 
+# Infinite loops: a loot that keeps executing and never stops
+
+# What are while loops in Python: While loops let the computer execute a set of instructions while a condition is true.
