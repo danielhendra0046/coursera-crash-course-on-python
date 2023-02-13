@@ -124,3 +124,6 @@ multiplication_table(8)
 
 # SUBCHAPTER FOR LOOPS
 
+# use for loops when there's a sequence of elements that you want to iterate
+# use while loops when you want to repeat an action until a condition changes
+
