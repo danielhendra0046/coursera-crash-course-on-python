@@ -127,3 +127,8 @@ multiplication_table(8)
 # use for loops when there's a sequence of elements that you want to iterate
 # use while loops when you want to repeat an action until a condition changes
 
+product = 1
+for n in range(1,10):
+  product = product * n
+
+print(product)
